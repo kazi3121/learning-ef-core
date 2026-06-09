@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("learning_ef-_core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d80fad56d44fee79efaea484a1a535401fd7e0d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfbe6d1926162789accc275eadfd2b7a6bfb8b69")]
 [assembly: System.Reflection.AssemblyProductAttribute("learning_ef-_core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("learning_ef-_core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
