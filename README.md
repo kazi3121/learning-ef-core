@@ -27,8 +27,6 @@ This project focuses on using EF Core to handle database operations through doma
 3. Update connection strings in `Program.cs` for both projects.
 4. Run the projects using:
    ```bash
-   dotnet run --project learning-ado-net
-   # OR
    dotnet run --project learning-entity-framework
    ```
 
