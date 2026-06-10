@@ -80,4 +80,19 @@ app.MapPost("/user", async (AppDbContext context, UserRequest request) =>
     }
 });
 
+app.MapPost("/one-to-one", async (AppDbContext context, UserRequestWithAddress request) =>
+{
+    var userEntity = new User
+    {
+        Name = request.Name,
+        Email = request.Email,
+        UserProfile = new UserProfile
+        {
+            Address = request.Address
+        }
+    };
+
+    await context.Users.AddAsync(userEntity);
+    await context.SaveChangesAsync();
+});
 app.Run();

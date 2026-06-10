@@ -1,5 +1,10 @@
 public record UserRequest(
-    Guid id,
     string Name,
     string Email
+);
+
+public record UserRequestWithAddress(
+    string Name,
+    string Email,
+    string Address
 );

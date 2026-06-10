@@ -29,11 +29,13 @@ namespace learning_ef__core.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.HasKey("Id");
 
@@ -48,7 +50,8 @@ namespace learning_ef__core.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(250)
+                        .HasColumnType("character varying(250)");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
@@ -58,7 +61,7 @@ namespace learning_ef__core.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("UserProfile");
+                    b.ToTable("UserProfiles");
                 });
 
             modelBuilder.Entity("UserProfile", b =>
